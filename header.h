@@ -37,15 +37,17 @@ struct kolaborasi{
     adrDivisi d1,d2;
 };
 
-void createListDivisi(List &L);
+void createList(List &L);
 adrDivisi createDivisi(string namaDiv);
 void insertDivisi(List &L,adrDivisi p);
 adrDivisi findDivisi(List &L,string namaDiv);
 void deleteDivisi(List &L,string namaDiv);
 void printDivisi(List L);
-
 adrAnggota createAnggota(anggota x);
-
+void insertAnggota(List &L,string namaDiv, adrAnggota q);
+adrAnggota findAnggota(adrDivisi p, string id);
+void deleteAnggota(List &L,string namaDiv,string id);
+void printAnggota(List L,string namaDiv);
 
 
 #endif // HEADER_H_INCLUDED
